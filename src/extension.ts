@@ -39,7 +39,7 @@ async function pickConfig(manager: Manager, activeOrNot?: boolean): Promise<stri
 }
 
 function getVersion(): string | undefined {
-  const ext = vscode.extensions.getExtension('Kelvin.vscode-sshfs');
+  const ext = vscode.extensions.getExtension('vistec.vscode-sshfs');
   return ext && ext.packageJSON && ext.packageJSON.version;
 }
 

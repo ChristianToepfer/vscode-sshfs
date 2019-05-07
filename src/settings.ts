@@ -16,7 +16,7 @@ const DEBUG: number | undefined = process.execArgv.find(a => a.includes('--inspe
 if (DEBUG) console.warn('[vscode-sshfs] Detected we are running in debug mode');
 
 function getExtensionPath(): string | undefined {
-  const ext = vscode.extensions.getExtension('Kelvin.vscode-sshfs');
+  const ext = vscode.extensions.getExtension('vistec.vscode-sshfs');
   return ext && ext.extensionPath;
 }
 
